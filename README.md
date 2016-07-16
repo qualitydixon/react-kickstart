@@ -10,7 +10,7 @@ My own little React boilerplate.
 - Webpack
 - LESS
 - ESLint (standard)
-- Hot Loader
+- React Hot Loader
 
 ## Installation
 
@@ -22,3 +22,4 @@ Just fork and clone this repo, run `npm install`, then `npm run start`. Then go 
 
 - Implement Flow
 - Add testing
+- Add informative comments
