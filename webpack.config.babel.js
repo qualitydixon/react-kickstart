@@ -1,6 +1,7 @@
 import webpack from 'webpack'
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import DashboardPlugin from 'webpack-dashboard/plugin'
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.join(__dirname, '/app/index.html'),
@@ -31,9 +32,9 @@ const base = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.less$/, loader: 'style!css!less-loader' },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', },
+      { test: /\.css$/, loader: 'style-loader!css-loader', },
+      { test: /\.less$/, loader: 'style!css!less-loader', },
     ],
   },
 }
@@ -51,7 +52,11 @@ const developmentConfig = {
     inline: true,
     progress: true,
   },
-  plugins: [HtmlWebpackPluginConfig, new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    HtmlWebpackPluginConfig,
+    new webpack.HotModuleReplacementPlugin(),
+    new DashboardPlugin(),
+  ],
 }
 
 const productionConfig = {
@@ -63,7 +68,7 @@ const productionConfig = {
     compress: {
       warnings: true,
     },
-  })],
+  }), ],
 }
 
 export default Object.assign({}, base,
