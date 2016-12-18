@@ -64,11 +64,15 @@ const productionConfig = {
     './app/index',
   ],
   devtool: 'cheap-module-source-map',
-  plugins: [HtmlWebpackPluginConfig, productionPlugin, new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: true,
-    },
-  }), ],
+  plugins: [
+    HtmlWebpackPluginConfig,
+    productionPlugin,
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+    }),
+  ],
 }
 
 export default Object.assign({}, base,

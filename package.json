@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dashboard -- webpack-dev-server --hot --inline",
     "lint": "eslint src",
-    "production": "webpack -p",
+    "production": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
@@ -22,7 +22,7 @@
     "less-loader": "^2.2.3",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-router": "^2.8.0"
+    "react-router": "4.0.0-2"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
