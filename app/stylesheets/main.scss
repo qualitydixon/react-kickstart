@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+$background: #00A388;
+$fontColor: #F4F4F4;
+$mainFont: Roboto;
+
+body {
+	background: $background;
+	color: $fontColor;
+	font-family: $mainFont;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

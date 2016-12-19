@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import { BrowserRouter, Match, Miss, Link } from 'react-router'
 import Home from '../components/Home'
-require('../stylesheets/main.less')
+require('../stylesheets/main.scss')
 
 export default class MainContainer extends Component {
 	render () {
@@ -21,27 +21,27 @@ export default class MainContainer extends Component {
 					<Miss component={NoMatch}/>
 				</div>
 			</BrowserRouter>
-    )
+		)
 	}
 }
 
 const About = () => (
-  <div>
-    <h2>{'About'}</h2>
-  </div>
+	<div>
+		<h2>{'About'}</h2>
+	</div>
 )
 
 const Topics = () => (
-  <div>
-    <h2>{'Topics'}</h2>
-  </div>
+	<div>
+		<h2>{'Topics'}</h2>
+	</div>
 )
 
 const NoMatch = ({ location }) => (
-  <div>
-    <h2>{'Whoops'}</h2>
-    <p>{`Sorry but ${location.pathname} didn’t match any pages`}</p>
-  </div>
+	<div>
+		<h2>{'Whoops'}</h2>
+		<p>{`Sorry but ${location.pathname} didn’t match any pages`}</p>
+	</div>
 )
 
 NoMatch.propTypes = {
