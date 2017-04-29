@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-	template: path.join(__dirname, '/app/index.html'),
+	template: path.join(__dirname, '/src/index.html'),
 	filename: 'index.html',
 	inject: 'body'
 });
@@ -38,7 +38,7 @@ const base = {
 
 const developmentConfig = {
 	entry: {
-		main: './app/index.js'
+		main: './src/index.js'
 	},
 	output: {
 		path: PATHS.dist,
@@ -57,7 +57,7 @@ const developmentConfig = {
 
 const productionConfig = {
 	entry: {
-		main: './app/index.js',
+		main: './src/index.js',
 		vendor: ['react', 'react-dom', 'react-router']
 	},
 	output: {
