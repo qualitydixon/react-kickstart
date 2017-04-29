@@ -18,8 +18,12 @@ export default class App extends Component {
 						<li><Link to="/about">{'About'}</Link></li>
 						<li><Link to="/topics">{'Topics'}</Link></li>
 					</ul>
-					<Route exact path="/" component={Home} />
-					<Route path="/about" component={About} />
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route path="/about" component={About} />
+						<Route path="/topics" component={Topics} />
+						<Route component={NoMatch} />
+					</Switch>
 				</div>
 			</BrowserRouter>
 		);
