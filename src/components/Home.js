@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Home extends Component {
-	render () {
+	render() {
 		return (
 			<div>
 				{
@@ -12,6 +12,6 @@ export default class Home extends Component {
 					'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'
 				}
 			</div>
-		)
+		);
 	}
 }
