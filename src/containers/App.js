@@ -1,10 +1,24 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { CSSTransitionGroup } from 'react-transition-group';
 import Home from 'components/Home';
 require('../stylesheets/main.scss');
 
 export default class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			items: ['candle', 'reindeer', 'baseball', 'magazine'],
+			newItem: ''
+		};
+	}
+
+	handleChange(e) {
+		e.persist();
+		this.setState(() => ({ newItem: e.target.value }));
+	}
 	render() {
+		const { newItem, items } = this.state;
 		return (
 			<BrowserRouter>
 				<div>
@@ -18,8 +32,31 @@ export default class App extends Component {
 						<li><Link to="/about">{'About'}</Link></li>
 						<li><Link to="/topics">{'Topics'}</Link></li>
 					</ul>
+					<CSSTransitionGroup
+						transitionName="fade"
+						transitionEnterTimeout={300}
+						transitionLeaveTimeout={300}
+					>
+						{items.map((item, idx) => <div key={idx}>{item}</div>)}
+					</CSSTransitionGroup>
+					<input
+						type="text"
+						placeholder="new item"
+						value={newItem}
+						className="input"
+						onChange={e => this.handleChange(e)}
+					/>
+					<button
+						onClick={() =>
+							this.setState(prevState => ({
+								items: prevState.items.concat([newItem]),
+								newItem: ''
+							}))}
+					>
+						submit
+					</button>
 					<Switch>
-						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Home} key="Home" />
 						<Route path="/about" component={About} />
 						<Route path="/topics" component={Topics} />
 						<Route component={NoMatch} />
