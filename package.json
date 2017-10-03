@@ -1,6 +1,6 @@
 {
 	"name": "react-kickstart",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description":
 		"react, react-router, webpack, babel. All wired up and ready to go.",
 	"main": "index.js",
