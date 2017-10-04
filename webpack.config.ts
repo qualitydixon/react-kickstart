@@ -1,7 +1,6 @@
 import * as webpack from 'webpack';
 import * as path from 'path';
 
-const tsc = require('typescript');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
@@ -9,6 +8,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 	template: path.join(__dirname, '/src/index.html'),
 	filename: 'index.html',
+	favicon: path.join(__dirname, '/src/static/react-icon-small.png'),
 	inject: 'body'
 });
 
@@ -33,23 +33,23 @@ const base = {
 	module: {
 		rules: [
 			{
-				test: /\.(t|j)s?$/,
+				test: /\.(t|j)sx?$/,
 				use: 'awesome-typescript-loader',
 				exclude: /node_modules/
 			},
-			{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+			{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				use: 'file-loader'
+			}
 		]
 	},
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js'],
+		extensions: ['.tsx', '.ts', '.js', '.json'],
 		alias: {
 			components: path.join(__dirname, './src/components'),
 			containers: path.join(__dirname, './src/containers')
 		}
-	},
-	externals: {
-		react: 'React',
-		'react-dom': 'ReactDOM'
 	}
 };
 
