@@ -1,7 +1,8 @@
 {
 	"name": "react-kickstart",
-	"version": "0.0.2",
-	"description": "react, react-router, webpack, babel. All wired up and ready to go.",
+	"version": "0.0.3",
+	"description":
+		"react, react-router, webpack, babel. All wired up and ready to go.",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server",
@@ -10,10 +11,7 @@
 		"deploy": "gh-pages -d dist",
 		"stats": "webpack-bundle-analyzer ./build/stats.json"
 	},
-	"keywords": [
-		"react",
-		"react-router"
-	],
+	"keywords": ["react", "react-router"],
 	"author": "Mike Dixon <qualitydixon@gmail.com>",
 	"license": "ISC",
 	"dependencies": {
