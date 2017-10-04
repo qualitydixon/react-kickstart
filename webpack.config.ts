@@ -1,6 +1,8 @@
-import webpack from 'webpack';
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as webpack from 'webpack';
+import * as path from 'path';
+
+const tsc = require('typescript');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
 
@@ -29,10 +31,21 @@ const productionPlugin = new webpack.DefinePlugin({
 
 const base = {
 	module: {
-		loaders: [
-			{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-			{ test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' }
+		rules: [
+			{
+				test: /\.(t|j)s?$/,
+				use: 'awesome-typescript-loader',
+				exclude: /node_modules/
+			},
+			{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
 		]
+	},
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+		alias: {
+			components: path.join(__dirname, './src/components'),
+			containers: path.join(__dirname, './src/containers')
+		}
 	}
 };
 
@@ -69,7 +82,7 @@ const productionConfig = {
 		HtmlWebpackPluginConfig,
 		productionPlugin,
 		new webpack.optimize.CommonsChunkPlugin({
-			name: ['vendor', 'manifest']
+			name: 'vendor'
 		}),
 		new BundleAnalyzerPlugin({
 			analyzerMode: 'disabled',
@@ -84,7 +97,7 @@ const productionConfig = {
 	]
 };
 
-export default Object.assign(
+export default (<any>Object).assign(
 	{},
 	base,
 	isProduction === true ? productionConfig : developmentConfig
