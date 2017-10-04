@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
 import Home from 'components/Home';
@@ -8,7 +8,7 @@ interface AppState {
 	items: Array<string>;
 	newItem: string;
 }
-export default class App extends Component<undefined, AppState> {
+export default class App extends React.Component<undefined, AppState> {
 	constructor(props) {
 		super(props);
 		this.state = {
