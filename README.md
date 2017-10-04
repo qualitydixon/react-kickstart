@@ -1,25 +1,23 @@
-# react-kickstart
+# React Kickstart
 My own little React boilerplate.
 
 [DEMO](http://qualitydixon.github.io/react-kickstart/)
 
-## In this project...
+## Why React Kickstart?
 
-- React
-- React Router
-- Webpack
-- LESS
-- ESLint (standard)
-- React Hot Loader
+- Typescript
+- React Router v4
+- Webpack 3
+- SCSS
 
-## Installation
+## Get Started
 
-Just fork and clone this repo, run `npm install`, then `npm run start`. Then go to `http://localhost:8080/` in your browser. You should see this:
+Clone this repo and run
 
-![alt text](https://github.com/qualitydixon/react-kickstart/blob/master/react-kickstart-screen.png)
+	`yarn install`
+	
+then
 
-## Todo
+	`npm run start`
 
-- Implement Flow
-- Add testing
-- Add informative comments
+You can see your project at `http://localhost:8080/`
