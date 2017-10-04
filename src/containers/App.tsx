@@ -4,7 +4,11 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Home from 'components/Home';
 require('../stylesheets/main.scss');
 
-export default class App extends Component {
+interface AppState {
+	items: Array<string>;
+	newItem: string;
+}
+export default class App extends Component<undefined, AppState> {
 	constructor(props) {
 		super(props);
 		this.state = {
