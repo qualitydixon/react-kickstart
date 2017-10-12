@@ -2,16 +2,16 @@
   "errors": [],
   "warnings": [],
   "version": "3.6.0",
-  "hash": "7497937393b40b4d574c",
-  "time": 5021,
+  "hash": "4d3a40eddd0cc091c84c",
+  "time": 5951,
   "publicPath": "",
   "assetsByChunkName": {
-    "main": "edddf5a5a698d2d91b94.main.js",
-    "vendor": "9b1d04c8c8833cf4546c.vendor.js"
+    "main": "2b2bcf1ad13fe5b0bed0.main.js",
+    "vendor": "3b2d9938680914e0d5b5.vendor.js"
   },
   "assets": [
     {
-      "name": "edddf5a5a698d2d91b94.main.js",
+      "name": "2b2bcf1ad13fe5b0bed0.main.js",
       "size": 62149,
       "chunks": [
         0
@@ -22,7 +22,7 @@
       "emitted": true
     },
     {
-      "name": "9b1d04c8c8833cf4546c.vendor.js",
+      "name": "3b2d9938680914e0d5b5.vendor.js",
       "size": 151700,
       "chunks": [
         1
@@ -55,8 +55,8 @@
         0
       ],
       "assets": [
-        "9b1d04c8c8833cf4546c.vendor.js",
-        "edddf5a5a698d2d91b94.main.js"
+        "3b2d9938680914e0d5b5.vendor.js",
+        "2b2bcf1ad13fe5b0bed0.main.js"
       ]
     },
     "vendor": {
@@ -64,7 +64,7 @@
         1
       ],
       "assets": [
-        "9b1d04c8c8833cf4546c.vendor.js"
+        "3b2d9938680914e0d5b5.vendor.js"
       ]
     }
   },
@@ -80,9 +80,9 @@
         "main"
       ],
       "files": [
-        "edddf5a5a698d2d91b94.main.js"
+        "2b2bcf1ad13fe5b0bed0.main.js"
       ],
-      "hash": "edddf5a5a698d2d91b94",
+      "hash": "2b2bcf1ad13fe5b0bed0",
       "parents": [
         1
       ],
@@ -358,9 +358,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/util/requestAnimationFrame.js",
-          "issuerId": 79,
-          "issuerName": "./node_modules/dom-helpers/util/requestAnimationFrame.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/transition/properties.js",
+          "issuerId": 80,
+          "issuerName": "./node_modules/dom-helpers/transition/properties.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -1470,7 +1470,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your Home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
         },
         {
           "id": 82,
@@ -1877,9 +1877,9 @@
         "vendor"
       ],
       "files": [
-        "9b1d04c8c8833cf4546c.vendor.js"
+        "3b2d9938680914e0d5b5.vendor.js"
       ],
-      "hash": "9b1d04c8c8833cf4546c",
+      "hash": "3b2d9938680914e0d5b5",
       "parents": [],
       "modules": [
         {
@@ -2306,9 +2306,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/MemoryRouter.js",
-          "issuerId": 22,
-          "issuerName": "./node_modules/react-router/es/MemoryRouter.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/Prompt.js",
+          "issuerId": 24,
+          "issuerName": "./node_modules/react-router/es/Prompt.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2980,9 +2980,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-          "issuerId": 34,
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 36,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3264,9 +3264,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
-          "issuerId": 63,
-          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
+          "issuerId": 64,
+          "issuerName": "./node_modules/history/es/createHashHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3324,9 +3324,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-          "issuerId": 34,
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 36,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3371,9 +3371,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-          "issuerId": 34,
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 36,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3669,9 +3669,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
-          "issuerId": 63,
-          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
+          "issuerId": 64,
+          "issuerName": "./node_modules/history/es/createHashHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5284,9 +5284,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/MemoryRouter.js",
-      "issuerId": 22,
-      "issuerName": "./node_modules/react-router/es/MemoryRouter.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/Prompt.js",
+      "issuerId": 24,
+      "issuerName": "./node_modules/react-router/es/Prompt.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -5958,9 +5958,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-      "issuerId": 34,
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 36,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6302,9 +6302,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
-      "issuerId": 63,
-      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
+      "issuerId": 64,
+      "issuerName": "./node_modules/history/es/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6362,9 +6362,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-      "issuerId": 34,
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 36,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6409,9 +6409,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
-      "issuerId": 34,
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 36,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6856,9 +6856,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
-      "issuerId": 63,
-      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
+      "issuerId": 64,
+      "issuerName": "./node_modules/history/es/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7121,9 +7121,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/util/requestAnimationFrame.js",
-      "issuerId": 79,
-      "issuerName": "./node_modules/dom-helpers/util/requestAnimationFrame.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/transition/properties.js",
+      "issuerId": 80,
+      "issuerName": "./node_modules/dom-helpers/transition/properties.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9130,7 +9130,7 @@
       ],
       "optimizationBailout": [],
       "depth": 2,
-      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your Home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
     },
     {
       "id": 82,
@@ -9623,12 +9623,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 541168,
+          "size": 541135,
           "names": [],
           "files": [
             "index.html"
           ],
-          "hash": "49ab12e1abba5dac6de5",
+          "hash": "9f0234141d40ffe0e0e6",
           "parents": [],
           "modules": [
             {
@@ -9637,7 +9637,7 @@
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "index": 0,
               "index2": 3,
-              "size": 554,
+              "size": 521,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -9657,12 +9657,12 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 0,
-              "source": "var _ = require(\"./../node_modules/html-webpack-plugin/node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n\\n<head>\\n\t<meta charset=\"UTF-8\">\\n\t<title>React Kickstart</title>\\n</head>\\n\\n<body>\\n\t<div id=\"app\"></div>\\n</body>\\n\\n</html>';\nreturn __p\n})();}"
+              "source": "var _ = require(\"./../node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n\\n<head>\\n\t<meta charset=\"UTF-8\">\\n\t<title>React Kickstart</title>\\n</head>\\n\\n<body>\\n\t<div id=\"app\"></div>\\n</body>\\n\\n</html>';\nreturn __p\n})();}"
             },
             {
               "id": 1,
-              "identifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "name": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "identifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+              "name": "./node_modules/lodash/lodash.js",
               "index": 1,
               "index2": 2,
               "size": 539588,
@@ -9687,8 +9687,8 @@
                   "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "type": "cjs require",
-                  "userRequest": "./../node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-                  "loc": "1:8-86"
+                  "userRequest": "./../node_modules/lodash/lodash.js",
+                  "loc": "1:8-53"
                 }
               ],
               "usedExports": true,
@@ -9712,21 +9712,21 @@
                 0
               ],
               "assets": [],
-              "issuer": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "issuer": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
               "issuerId": 1,
-              "issuerName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "issuerName": "./node_modules/lodash/lodash.js",
               "failed": false,
               "errors": 0,
               "warnings": 0,
               "reasons": [
                 {
                   "moduleId": 1,
-                  "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-                  "module": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-                  "moduleName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+                  "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+                  "module": "./node_modules/lodash/lodash.js",
+                  "moduleName": "./node_modules/lodash/lodash.js",
                   "type": "cjs require",
                   "userRequest": "global",
-                  "loc": "1:0-47"
+                  "loc": "1:0-41"
                 }
               ],
               "usedExports": true,
@@ -9750,21 +9750,21 @@
                 0
               ],
               "assets": [],
-              "issuer": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "issuer": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
               "issuerId": 1,
-              "issuerName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "issuerName": "./node_modules/lodash/lodash.js",
               "failed": false,
               "errors": 0,
               "warnings": 0,
               "reasons": [
                 {
                   "moduleId": 1,
-                  "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-                  "module": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-                  "moduleName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+                  "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+                  "module": "./node_modules/lodash/lodash.js",
+                  "moduleName": "./node_modules/lodash/lodash.js",
                   "type": "cjs require",
                   "userRequest": "module",
-                  "loc": "1:0-47"
+                  "loc": "1:0-41"
                 }
               ],
               "usedExports": true,
@@ -9794,7 +9794,7 @@
           "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
           "index": 0,
           "index2": 3,
-          "size": 554,
+          "size": 521,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9814,12 +9814,12 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 0,
-          "source": "var _ = require(\"./../node_modules/html-webpack-plugin/node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n\\n<head>\\n\t<meta charset=\"UTF-8\">\\n\t<title>React Kickstart</title>\\n</head>\\n\\n<body>\\n\t<div id=\"app\"></div>\\n</body>\\n\\n</html>';\nreturn __p\n})();}"
+          "source": "var _ = require(\"./../node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n\\n<head>\\n\t<meta charset=\"UTF-8\">\\n\t<title>React Kickstart</title>\\n</head>\\n\\n<body>\\n\t<div id=\"app\"></div>\\n</body>\\n\\n</html>';\nreturn __p\n})();}"
         },
         {
           "id": 1,
-          "identifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-          "name": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+          "identifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+          "name": "./node_modules/lodash/lodash.js",
           "index": 1,
           "index2": 2,
           "size": 539588,
@@ -9844,8 +9844,8 @@
               "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "type": "cjs require",
-              "userRequest": "./../node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "loc": "1:8-86"
+              "userRequest": "./../node_modules/lodash/lodash.js",
+              "loc": "1:8-53"
             }
           ],
           "usedExports": true,
@@ -9869,21 +9869,21 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
           "issuerId": 1,
-          "issuerName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+          "issuerName": "./node_modules/lodash/lodash.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
             {
               "moduleId": 1,
-              "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "module": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "moduleName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+              "module": "./node_modules/lodash/lodash.js",
+              "moduleName": "./node_modules/lodash/lodash.js",
               "type": "cjs require",
               "userRequest": "global",
-              "loc": "1:0-47"
+              "loc": "1:0-41"
             }
           ],
           "usedExports": true,
@@ -9907,21 +9907,21 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
           "issuerId": 1,
-          "issuerName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+          "issuerName": "./node_modules/lodash/lodash.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
             {
               "moduleId": 1,
-              "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "module": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
-              "moduleName": "./node_modules/html-webpack-plugin/node_modules/lodash/lodash.js",
+              "moduleIdentifier": "/Users/midixon/projects/react-kickstart/node_modules/lodash/lodash.js",
+              "module": "./node_modules/lodash/lodash.js",
+              "moduleName": "./node_modules/lodash/lodash.js",
               "type": "cjs require",
               "userRequest": "module",
-              "loc": "1:0-47"
+              "loc": "1:0-41"
             }
           ],
           "usedExports": true,
