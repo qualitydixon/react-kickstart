@@ -8,11 +8,11 @@
 		"node": true
 	},
 	"parser": "babel-eslint",
-	"plugins": [
-		"react"
-	],
+	"plugins": ["react"],
 	"extends": [
 		"eslint:recommended",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"prettier",
+		"prettier/react"
 	]
 }
