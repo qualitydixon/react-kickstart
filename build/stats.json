@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "3.6.0",
-  "hash": "4d3a40eddd0cc091c84c",
-  "time": 5951,
+  "hash": "27284ae90b4f3a9a97af",
+  "time": 4706,
   "publicPath": "",
   "assetsByChunkName": {
-    "main": "2b2bcf1ad13fe5b0bed0.main.js",
-    "vendor": "3b2d9938680914e0d5b5.vendor.js"
+    "main": "d1c1a608714014b9c337.main.js",
+    "vendor": "f7b594027ffa2e42f823.vendor.js"
   },
   "assets": [
     {
-      "name": "2b2bcf1ad13fe5b0bed0.main.js",
-      "size": 62149,
+      "name": "d1c1a608714014b9c337.main.js",
+      "size": 61957,
       "chunks": [
         0
       ],
@@ -22,7 +22,7 @@
       "emitted": true
     },
     {
-      "name": "3b2d9938680914e0d5b5.vendor.js",
+      "name": "f7b594027ffa2e42f823.vendor.js",
       "size": 151700,
       "chunks": [
         1
@@ -55,8 +55,8 @@
         0
       ],
       "assets": [
-        "3b2d9938680914e0d5b5.vendor.js",
-        "2b2bcf1ad13fe5b0bed0.main.js"
+        "f7b594027ffa2e42f823.vendor.js",
+        "d1c1a608714014b9c337.main.js"
       ]
     },
     "vendor": {
@@ -64,7 +64,7 @@
         1
       ],
       "assets": [
-        "3b2d9938680914e0d5b5.vendor.js"
+        "f7b594027ffa2e42f823.vendor.js"
       ]
     }
   },
@@ -75,14 +75,14 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 144119,
+      "size": 143900,
       "names": [
         "main"
       ],
       "files": [
-        "2b2bcf1ad13fe5b0bed0.main.js"
+        "d1c1a608714014b9c337.main.js"
       ],
-      "hash": "2b2bcf1ad13fe5b0bed0",
+      "hash": "d1c1a608714014b9c337",
       "parents": [
         1
       ],
@@ -162,9 +162,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/createHashHistory.js",
-          "issuerId": 54,
-          "issuerName": "./node_modules/history/createHashHistory.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/createBrowserHistory.js",
+          "issuerId": 52,
+          "issuerName": "./node_modules/history/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -358,9 +358,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/transition/properties.js",
-          "issuerId": 80,
-          "issuerName": "./node_modules/dom-helpers/transition/properties.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/util/requestAnimationFrame.js",
+          "issuerId": 79,
+          "issuerName": "./node_modules/dom-helpers/util/requestAnimationFrame.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -1436,7 +1436,7 @@
           "name": "./src/components/Home.tsx",
           "index": 81,
           "index2": 79,
-          "size": 1177,
+          "size": 958,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1470,7 +1470,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your Home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            React.createElement(\"p\", null, 'Welcome to React Kickstart!')));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
         },
         {
           "id": 82,
@@ -1877,9 +1877,9 @@
         "vendor"
       ],
       "files": [
-        "3b2d9938680914e0d5b5.vendor.js"
+        "f7b594027ffa2e42f823.vendor.js"
       ],
-      "hash": "3b2d9938680914e0d5b5",
+      "hash": "f7b594027ffa2e42f823",
       "parents": [],
       "modules": [
         {
@@ -2306,9 +2306,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/Prompt.js",
-          "issuerId": 24,
-          "issuerName": "./node_modules/react-router/es/Prompt.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/MemoryRouter.js",
+          "issuerId": 22,
+          "issuerName": "./node_modules/react-router/es/MemoryRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2980,9 +2980,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-          "issuerId": 36,
-          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+          "issuerId": 34,
+          "issuerName": "./node_modules/react/cjs/react.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3264,9 +3264,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
-          "issuerId": 64,
-          "issuerName": "./node_modules/history/es/createHashHistory.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 63,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3324,9 +3324,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-          "issuerId": 36,
-          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+          "issuerId": 34,
+          "issuerName": "./node_modules/react/cjs/react.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3371,9 +3371,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-          "issuerId": 36,
-          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+          "issuerId": 34,
+          "issuerName": "./node_modules/react/cjs/react.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3669,9 +3669,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
-          "issuerId": 64,
-          "issuerName": "./node_modules/history/es/createHashHistory.js",
+          "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 63,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5284,9 +5284,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/Prompt.js",
-      "issuerId": 24,
-      "issuerName": "./node_modules/react-router/es/Prompt.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-router/es/MemoryRouter.js",
+      "issuerId": 22,
+      "issuerName": "./node_modules/react-router/es/MemoryRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -5958,9 +5958,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-      "issuerId": 36,
-      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 34,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6302,9 +6302,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
-      "issuerId": 64,
-      "issuerName": "./node_modules/history/es/createHashHistory.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 63,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6362,9 +6362,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-      "issuerId": 36,
-      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 34,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6409,9 +6409,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react-dom/cjs/react-dom.production.min.js",
-      "issuerId": 36,
-      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 34,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6554,9 +6554,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/createHashHistory.js",
-      "issuerId": 54,
-      "issuerName": "./node_modules/history/createHashHistory.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/createBrowserHistory.js",
+      "issuerId": 52,
+      "issuerName": "./node_modules/history/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6856,9 +6856,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createHashHistory.js",
-      "issuerId": 64,
-      "issuerName": "./node_modules/history/es/createHashHistory.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 63,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7121,9 +7121,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/transition/properties.js",
-      "issuerId": 80,
-      "issuerName": "./node_modules/dom-helpers/transition/properties.js",
+      "issuer": "/Users/midixon/projects/react-kickstart/node_modules/dom-helpers/util/requestAnimationFrame.js",
+      "issuerId": 79,
+      "issuerName": "./node_modules/dom-helpers/util/requestAnimationFrame.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9096,7 +9096,7 @@
       "name": "./src/components/Home.tsx",
       "index": 81,
       "index2": 79,
-      "size": 1177,
+      "size": 958,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -9130,7 +9130,7 @@
       ],
       "optimizationBailout": [],
       "depth": 2,
-      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            'This is your Home component, which is currently set as the IndexRoute in app/config/routes.js. It shows when no other routes are active.',\r\n            React.createElement(\"br\", null),\r\n            'This boilerplate uses React, React Router 4, Babel, ESLint, Webpack 2, and SASS'));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport * as React from 'react';\r\nvar Home = /** @class */ (function (_super) {\r\n    __extends(Home, _super);\r\n    function Home() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Home.prototype.render = function () {\r\n        return (React.createElement(\"div\", null,\r\n            React.createElement(\"p\", null, 'Welcome to React Kickstart!')));\r\n    };\r\n    return Home;\r\n}(React.Component));\r\nexport default Home;\r\n"
     },
     {
       "id": 82,

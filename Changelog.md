@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.6 - October 12
+- Rework build/deploy flow
+- New deployment
 ## 0.0.5 - October 12
 - Start redesign of Home component
 - Remove Babel dependencies

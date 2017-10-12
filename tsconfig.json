@@ -12,7 +12,8 @@
 		"paths": {
 			"components": ["./src/components"],
 			"containers": ["./src/containers"]
-		}
+		},
+		"types": ["node", "webpack"]
 	},
 	"include": ["./src/"]
 }
