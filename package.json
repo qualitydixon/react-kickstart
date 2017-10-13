@@ -1,8 +1,7 @@
 {
 	"name": "react-kickstart",
 	"version": "0.0.6",
-	"description":
-		"react, react-router, webpack, and typescript. All wired up and ready to go.",
+	"description": "react, react-router, webpack, and typescript. All wired up and ready to go.",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server",
@@ -11,7 +10,11 @@
 		"deploy": "npm run build && gh-pages -d build",
 		"stats": "webpack-bundle-analyzer ./build/stats.json"
 	},
-	"keywords": ["react", "react-router", "typescript"],
+	"keywords": [
+		"react",
+		"react-router",
+		"typescript"
+	],
 	"author": "Mike Dixon <qualitydixon@gmail.com>",
 	"license": "ISC",
 	"dependencies": {
@@ -22,7 +25,8 @@
 		"react-router": "4.2.0",
 		"react-router-dom": "^4.2.2",
 		"react-transition-group": "^1.1.2",
-		"sass-loader": "^6.0.3"
+		"sass-loader": "^6.0.3",
+		"styled-components": "2.2.1"
 	},
 	"devDependencies": {
 		"@types/node": "8.0.32",
@@ -42,6 +46,7 @@
 		"standard": "^10.0.2",
 		"style-loader": "^0.16.1",
 		"typescript": "2.5.3",
+		"typescript-eslint-parser": "8.0.0",
 		"webpack": "3.6.0",
 		"webpack-bundle-analyzer": "2.9.0",
 		"webpack-dev-server": "^2.9.1"

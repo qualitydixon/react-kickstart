@@ -7,7 +7,6 @@
 		"browser": true,
 		"node": true
 	},
-	"parser": "babel-eslint",
 	"plugins": ["react"],
 	"extends": [
 		"eslint:recommended",
