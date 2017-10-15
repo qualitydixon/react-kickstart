@@ -2,7 +2,8 @@ import * as React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
 import Home from 'components/Home';
-require('../stylesheets/main.scss');
+import styled from 'styles/styled-components';
+require('../styles/main.scss');
 
 interface AppState {
 	items: Array<string>;
@@ -26,11 +27,13 @@ export default class App extends React.Component<undefined, AppState> {
 		return (
 			<BrowserRouter>
 				<div>
-					<h2>
-						{
-							'This is part of the main container. You will always see this, regardless of what route you are on'
-						}
-					</h2>
+					<TitleWrapper>
+						<AppTitle>
+							<span>{'React'}</span>
+							<TitleDecorator>{'React'}</TitleDecorator>
+						</AppTitle>
+						<AppTitle>{'Kickstart'}</AppTitle>
+					</TitleWrapper>
 					<ul>
 						<li>
 							<Link to="/">{'Home'}</Link>
@@ -77,6 +80,57 @@ export default class App extends React.Component<undefined, AppState> {
 	}
 }
 
+interface AppTitleProps {
+	children: string;
+}
+const AppTitle = styled.h1`
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15vw;
+	margin: 0;
+	font-weight: 700;
+	position: relative;
+	display: block;
+	background-color: #ffe2df;
+	z-index: 2;
+	&:before {
+		content: 'React';
+		display: none;
+		position: absolute;
+		top: -80%;
+		left: 0;
+		font-size: 15vw;
+		color: #464cdc;
+		overflow: hidden;
+		transform: translateY(50%);
+		z-index: -1;
+	}
+	> span {
+		&:first-child {
+			background-color: #ffe2df;
+			display: block;
+			line-height: 90%;
+		}
+	}
+`;
+
+const TitleWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8em;
+`;
+
+const TitleDecorator = styled.span`
+	position: absolute;
+	top: -130%;
+	left: 0;
+	font-size: 15vw;
+	color: #464cdc;
+	overflow: hidden;
+	transform: translateY(50%);
+	z-index: -1;
+`;
 const About = () => (
 	<div>
 		<h2>{'About'}</h2>

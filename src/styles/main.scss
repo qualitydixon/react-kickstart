@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+$background: #ffe2df;
+$fontColor: #f14e30;
+$mainFont: Roboto;
+
+body {
+	background: $background;
+	color: $fontColor;
+	font-family: $mainFont;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input {
+	color: red;
+}
+
+.fade-enter {
+	opacity: 0;
+	z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+	opacity: 1;
+	transition: opacity 250ms ease-in;
+}
