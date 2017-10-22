@@ -9,7 +9,7 @@
 - Typescript
 - React Router v4
 - Webpack 3
-- SCSS
+- SCSS & Styled Components
 
 ## Get Started
 
