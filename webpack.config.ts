@@ -55,7 +55,7 @@ const base = {
 
 const developmentConfig = {
 	entry: {
-		main: './src/index.js'
+		main: './src/index.tsx'
 	},
 	output: {
 		path: PATHS.dist,
@@ -74,7 +74,7 @@ const developmentConfig = {
 
 const productionConfig = {
 	entry: {
-		main: './src/index.js',
+		main: './src/index.tsx',
 		vendor: ['react', 'react-dom', 'react-router']
 	},
 	output: {

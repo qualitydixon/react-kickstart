@@ -1,64 +1,66 @@
 {
-  "name": "react-kickstart",
-  "version": "0.0.6",
-  "description": "react, react-router, webpack, and typescript. All wired up and ready to go.",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server",
-    "lint": "eslint src",
-    "build": "webpack",
-    "deploy": "npm run build && gh-pages -d build",
-    "stats": "webpack-bundle-analyzer ./build/stats.json",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "keywords": [
-    "react",
-    "react-router",
-    "typescript"
-  ],
-  "author": "Mike Dixon <qualitydixon@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "@types/react": "16.0.10",
-    "axios": "^0.16.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router": "4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-transition-group": "^1.1.2",
-    "sass-loader": "^6.0.3",
-    "styled-components": "2.2.1"
-  },
-  "devDependencies": {
-    "@types/node": "8.0.32",
-    "@types/webpack": "3.0.13",
-    "awesome-typescript-loader": "3.2.3",
-    "css-loader": "^0.28.0",
-    "eslint": "^3.19.0",
-    "eslint-config-prettier": "2.6.0",
-    "eslint-plugin-react": "^6.10.3",
-    "extract-text-webpack-plugin": "2.1.0",
-    "file-loader": "1.1.4",
-    "gh-pages": "^1.0.0",
-    "html-webpack-plugin": "^2.28.0",
-    "node-sass": "4.5.3",
-    "react-hot-loader": "^3.0.0-beta.3",
-    "source-map-loader": "0.2.2",
-    "standard": "^10.0.2",
-    "style-loader": "^0.16.1",
-    "typescript": "2.5.3",
-    "typescript-eslint-parser": "8.0.0",
-    "webpack": "3.6.0",
-    "webpack-bundle-analyzer": "2.9.0",
-    "webpack-dev-server": "^2.9.1",
-    "@storybook/react": "^3.2.12",
-    "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12"
-  },
-  "engines": {
-    "node": "^8.5.0",
-    "npm": "^5.4.2",
-    "yarn": "^1.1.0"
-  }
+	"name": "react-kickstart",
+	"version": "0.0.6",
+	"description":
+		"react, react-router, webpack, and typescript. All wired up and ready to go.",
+	"main": "index.tsx",
+	"scripts": {
+		"start": "webpack-dev-server",
+		"lint": "eslint src",
+		"build": "webpack",
+		"deploy": "npm run build && gh-pages -d build",
+		"stats": "webpack-bundle-analyzer ./build/stats.json",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"keywords": ["react", "react-router", "typescript"],
+	"author": "Mike Dixon <qualitydixon@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"@types/react": "16.0.16",
+		"@types/react-router": "4.0.16",
+		"@types/react-router-dom": "4.0.8",
+		"axios": "^0.16.1",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0",
+		"react-router": "4.2.0",
+		"react-router-dom": "^4.2.2",
+		"react-transition-group": "^2.2.1",
+		"sass-loader": "^6.0.3",
+		"styled-components": "2.2.1"
+	},
+	"devDependencies": {
+		"@storybook/addon-actions": "^3.2.12",
+		"@storybook/addon-links": "^3.2.12",
+		"@storybook/react": "^3.2.12",
+		"@types/node": "8.0.46",
+		"@types/webpack": "3.0.13",
+		"awesome-typescript-loader": "3.2.3",
+		"css-loader": "^0.28.0",
+		"eslint": "^3.19.0",
+		"eslint-config-prettier": "2.6.0",
+		"eslint-plugin-react": "^6.10.3",
+		"extract-text-webpack-plugin": "2.1.0",
+		"file-loader": "1.1.4",
+		"gh-pages": "^1.0.0",
+		"html-webpack-plugin": "^2.28.0",
+		"node-sass": "4.5.3",
+		"react-hot-loader": "^3.0.0-beta.3",
+		"source-map-loader": "0.2.2",
+		"standard": "^10.0.2",
+		"style-loader": "^0.16.1",
+		"typescript": "2.5.3",
+		"typescript-eslint-parser": "8.0.0",
+		"webpack": "3.6.0",
+		"webpack-bundle-analyzer": "2.9.0",
+		"webpack-dev-server": "^2.9.1"
+	},
+	"engines": {
+		"node": "^8.5.0",
+		"npm": "^5.4.2",
+		"yarn": "^1.1.0"
+	},
+	"resolutions": {
+		"@types/react": "16.0.16"
+	}
 }
