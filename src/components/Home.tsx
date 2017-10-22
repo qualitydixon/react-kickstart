@@ -4,7 +4,7 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div>
-				<p>{'Welcome to React Kickstart!'}</p>
+				<h2>{'Welcome to React Kickstart!'}</h2>
 			</div>
 		);
 	}
