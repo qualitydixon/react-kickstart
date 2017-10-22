@@ -1,6 +1,6 @@
 {
 	"name": "react-kickstart",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description":
 		"react, react-router, webpack, and typescript. All wired up and ready to go.",
 	"main": "index.tsx",
