@@ -1,5 +1,6 @@
 # React Kickstart
-My own little React boilerplate.
+
+![React Kickstart](./src/static/kickstart-clip.gif)
 
 [DEMO](http://qualitydixon.github.io/react-kickstart/)
 
