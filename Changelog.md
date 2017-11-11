@@ -1,5 +1,6 @@
 # Changelog
-
+## 0.0.8 - 11/10/2017
+- Refactor and organize webpack config using best practices specified in webpack docs. Move output from `build` to `dist`.
 ## 0.0.6 - October 12
 - Rework build/deploy flow
 - New deployment

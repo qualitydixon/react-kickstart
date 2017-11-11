@@ -1,11 +1,12 @@
 import * as webpack from 'webpack';
 import * as path from 'path';
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 	.BundleAnalyzerPlugin;
-
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+	chunksSortMode: 'dependency',
 	template: path.join(__dirname, '/src/index.html'),
 	filename: 'index.html',
 	favicon: path.join(__dirname, '/src/static/react-icon-small.png'),
@@ -18,17 +19,13 @@ const PATHS = {
 	dist: path.join(__dirname, 'dist')
 };
 
-const LAUNCH_COMMAND = process.env.npm_lifecycle_event;
+const isProduction = process.env.npm_lifecycle_event === 'build';
 
-const isProduction = LAUNCH_COMMAND === 'build';
-
-const productionPlugin = new webpack.DefinePlugin({
-	'process.env': {
-		NODE_ENV: JSON.stringify('production')
-	}
-});
-
-const base = {
+const baseConfig = {
+	entry: {
+		main: './src/index.tsx',
+		vendor: ['react', 'react-dom', 'react-router']
+	},
 	module: {
 		rules: [
 			{
@@ -54,14 +51,11 @@ const base = {
 };
 
 const developmentConfig = {
-	entry: {
-		main: './src/index.tsx'
-	},
 	output: {
 		path: PATHS.dist,
-		filename: 'bundle.js'
+		filename: '[hash].[name].js'
 	},
-	devtool: 'cheap-module-inline-source-map',
+	devtool: 'eval-source-map',
 	devServer: {
 		contentBase: PATHS.dist,
 		historyApiFallback: true,
@@ -69,40 +63,55 @@ const developmentConfig = {
 		inline: true,
 		quiet: false
 	},
-	plugins: [HtmlWebpackPluginConfig, new webpack.HotModuleReplacementPlugin()]
-};
-
-const productionConfig = {
-	entry: {
-		main: './src/index.tsx',
-		vendor: ['react', 'react-dom', 'react-router']
-	},
-	output: {
-		path: PATHS.build,
-		filename: '[chunkhash].[name].js'
-	},
-	devtool: 'cheap-module-source-map',
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
 		HtmlWebpackPluginConfig,
-		productionPlugin,
+		new webpack.HotModuleReplacementPlugin(),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor'
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common'
 		}),
 		new BundleAnalyzerPlugin({
 			analyzerMode: 'disabled',
 			generateStatsFile: true,
 			statsFilename: 'stats.json'
+		})
+	]
+};
+
+const productionConfig = {
+	output: {
+		path: PATHS.dist,
+		filename: '[chunkhash].[name].js'
+	},
+	devtool: 'source-map',
+	plugins: [
+		new CleanWebpackPlugin(['dist']),
+		HtmlWebpackPluginConfig,
+		new webpack.HashedModuleIdsPlugin(),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'vendor'
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common'
+		}),
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: JSON.stringify('production')
+			}
 		}),
 		new webpack.optimize.UglifyJsPlugin({
+			sourceMap: true,
 			compress: {
 				warnings: false
 			}
 		})
 	]
 };
-
 export default (<any>Object).assign(
 	{},
-	base,
+	baseConfig,
 	isProduction === true ? productionConfig : developmentConfig
 );
