@@ -3,6 +3,6 @@
 	"editor.formatOnSave": true,
 	"eslint.autoFixOnSave": true,
 	"prettier.useTabs": true,
-	"workbench.colorTheme": "Default Dark+",
+	"workbench.colorTheme": "Nord",
 	"importCost.javascriptExtensions": ["\\.jsx?$", "\\.ts"]
 }

@@ -1,7 +1,5 @@
 # React Kickstart
 
-![React Kickstart](./src/static/kickstart-clip.gif)
-
 [DEMO](http://qualitydixon.github.io/react-kickstart/)
 
 ## Why React Kickstart?
