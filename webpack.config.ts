@@ -16,7 +16,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const PATHS = {
 	app: path.join(__dirname, 'app'),
 	build: path.join(__dirname, 'build'),
-	dist: path.join(__dirname, 'dist')
+	dist: path.join(__dirname, 'dist'),
+	components: path.join(__dirname, './src/components'),
+	containers: path.join(__dirname, './src/containers'),
+	styles: path.join(__dirname, './src/styles')
 };
 
 const isProduction = process.env.npm_lifecycle_event === 'build';
@@ -30,7 +33,7 @@ const baseConfig = {
 		rules: [
 			{
 				test: /\.(t|j)sx?$/,
-				use: 'awesome-typescript-loader',
+				use: ['babel-loader', 'awesome-typescript-loader'],
 				exclude: /node_modules/
 			},
 			{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
@@ -43,16 +46,21 @@ const baseConfig = {
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js', '.json'],
 		alias: {
-			components: path.join(__dirname, './src/components'),
-			containers: path.join(__dirname, './src/containers'),
-			styles: path.join(__dirname, './src/styles')
+			components: PATHS.components,
+			containers: PATHS.containers,
+			styles: PATHS.styles
 		}
 	}
 };
 
 const developmentConfig = {
+	entry: {
+		main: ['react-hot-loader/patch', './src/index.tsx'],
+		vendor: ['react', 'react-dom', 'react-router']
+	},
 	output: {
 		path: PATHS.dist,
+		publicPath: '/',
 		filename: '[hash].[name].js'
 	},
 	devtool: 'eval-source-map',
@@ -64,8 +72,8 @@ const developmentConfig = {
 		quiet: false
 	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
 		HtmlWebpackPluginConfig,
+		new webpack.NamedModulesPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor'
