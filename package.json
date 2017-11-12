@@ -1,12 +1,13 @@
 {
 	"name": "react-kickstart",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description":
 		"react, react-router, webpack, and typescript. All wired up and ready to go.",
 	"main": "index.tsx",
 	"scripts": {
 		"local": "webpack-dev-server",
 		"build": "webpack",
+		"start": "npm run build && node ./server",
 		"deploy": "npm run build && gh-pages -d build",
 		"stats": "webpack-bundle-analyzer ./build/stats.json",
 		"storybook": "start-storybook -p 6006",
