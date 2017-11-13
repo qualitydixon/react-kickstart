@@ -11,10 +11,19 @@ storiesOf('Elements', module).add('Button', () => (
 		}}
 	>
 		<Button primary>
-			<span>Hello</span>
+			<span>Hello World</span>
 		</Button>
 		<Button primary>
 			<span>Log In</span>
+		</Button>
+		<Button>
+			<span>Save Settings</span>
+		</Button>
+		<Button danger>
+			<span>Delete Account</span>
+		</Button>
+		<Button success>
+			<span>Settings Saved</span>
 		</Button>
 	</div>
 ));

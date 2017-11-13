@@ -12,6 +12,7 @@ interface Props {
 	primary?: boolean;
 	secondary?: boolean;
 	danger?: boolean;
+	success?: boolean;
 }
 
 export default class Button extends React.Component<Props> {
@@ -35,9 +36,15 @@ const StyledButton = button`
 `;
 
 function getBackground(props) {
-	const { primary, secondary } = props;
+	const { primary, secondary, danger, minimal, success } = props;
 	if (primary) {
 		return Colors.blue;
+	} else if (danger) {
+		return Colors.red;
+	} else if (minimal) {
+		return 'transparent';
+	} else if (success) {
+		return Colors.green;
 	} else {
 		return Colors.tealBlue;
 	}
