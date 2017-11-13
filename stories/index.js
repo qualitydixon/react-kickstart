@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { storiesOf, configure } from '@storybook/react';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import { Welcome } from '@storybook/react/demo';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+const req = require.context('../src/components', true, /\.stories\.js$/);
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+function loadStories() {
+	req.keys().forEach(filename => req(filename));
+}
+
+storiesOf('Welcome', module).add('to Storybook', () => <Welcome />);
+
+configure(loadStories, module);
