@@ -1,4 +1,9 @@
 # Changelog
+## 0.0.10 - 11/12/2017
+- Update storybook webpack config.
+- Add sample Button component and `.stories.js` file
+- Add TSLint config file
+- Add `babel-eslint` parser
 ## 0.0.9 - 11/12/2017
 - Add simple express server to test production build locally
 ## 0.0.8 - 11/10/2017
